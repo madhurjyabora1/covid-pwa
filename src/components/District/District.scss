@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.main-data {
+    margin: 9rem auto;
+    .container {
+      max-width: 70%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 31% 31% 31%;
+      grid-column-gap: 3.5%;
+      grid-row-gap: 40px;
+      padding: 0 30px;
+      align-items: center;
+      .background{
+        &-green{
+        background-image: linear-gradient(to right top, #068b29, #0a922a, #0f992a, #14a02b, #19a72b, #1cad31, #1fb337, #21b93d, #22bf49, #24c655, #26cc60, #28d36b);
+        }
+        &-orange{
+            background-image: linear-gradient(to right top, #cf8e13, #d09018, #d1921d, #d29421, #d39625, #d59828, #d79b2c, #d99d2f, #dca033, #dfa436, #e2a73a, #e5ab3d);
+        }
+        &-red{
+            background-image: linear-gradient(to right top, #9b0909, #a11312, #a71b19, #ad2221, #b32928, #b9302e, #bf3635, #c53c3b, #cc4443, #d34b4a, #da5352, #e15a5a);
+        }
+    }
+      .card-body {
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);      
+        
+        text-align: center;
+        border-radius: 5%;
+        
+        &-dist {
+          padding: 1.5rem;
+          color: black;
+          font-size: 2rem;
+          font-family: 'Roboto', sans-serif;
+        }
+        &-detail {
+          padding: 2px;
+          .sub-detail {
+            margin-bottom: 25px;
+            .title {
+              display: block;
+              margin-bottom: .08rem;
+              margin-right: .08rem;
+              color: black;
+              font-weight: bold;
+              font-size: 1.4rem;
+            }
+            &:first-child{
+                padding-top: .8rem;
+            }
+            .val {
+              font-size: 1.2rem;
+              color: #fff
+            }
+            
+          }
+        }
+      }
+    }
+  }
+ 
+@media (max-width: 992px) {
+  
+    .main-data {
+      margin: 2rem auto;
+      .container {
+          max-width: 1200px;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 48% 48%;
+          grid-column-gap: 4%;
+          grid-row-gap: 40px;
+          padding: 0 30px;
+        }
+      }
+    }
+  
+  
+  @media (max-width: 600px) {
+  .main-data {
+        .container {
+          max-width: 1200px;
+          margin: auto;
+          display: unset;
+          padding: 0 30px;
+          .card-body {
+            width: 80%;
+            margin: 18px auto;
+          }
+            
+        }
+      }
+    }
+  
+

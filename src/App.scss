@@ -1,0 +1,43 @@
+.reset-btn {
+  position: fixed;
+  bottom: 1%;
+  width: 13%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 10px;
+  background: transparent;
+  .extra {
+    width: 100%;
+    font-size: 2rem;
+    background: #3F83F1;
+    color: #fff;
+    border: 1px #dadada solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    outline: none;
+  }
+  :hover {
+    border: 1px #C6C6C6 solid;
+    box-shadow: 1px 1px 1px #EAEAEA;
+    color: #333333;
+    background: #F7F7F7;
+}
+  :active {
+      box-shadow: inset 1px 1px 1px #DFDFDF;   
+  }
+}
+.spinnnahhh {
+  position: absolute;
+  font-size: 20rem;
+  left: 45%;
+  top: 30%;
+  transform: (50%, 50%);
+}
+@media (max-width: 600px) {
+  .reset-btn {
+    position: fixed;
+    bottom: 0%;
+    width: 70%;
+  }
+}
